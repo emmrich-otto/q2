@@ -7,6 +7,6 @@ class Link(models.Model):
         default = uuid.uuid4,
         editable = False)
 
-    target = models.URLField()
+    reference = models.URLField()
     created_at = models.DateTimeField(auto_now_add = True)
     last_modified_at = models.DateTimeField(auto_now = True)
