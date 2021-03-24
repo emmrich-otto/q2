@@ -8,6 +8,7 @@ class Link(models.Model):
         editable = False)
 
     reference = models.URLField()
+    active = models.BooleanField(default = False)
     created_at = models.DateTimeField(auto_now_add = True)
     last_modified_at = models.DateTimeField(auto_now = True)
 

@@ -4,4 +4,4 @@ from .models import Link
 class LinkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Link
-        fields = ['id', 'target', 'created_at', 'last_modified_at']
+        fields = ['id', 'target', 'active', 'created_at', 'last_modified_at']
